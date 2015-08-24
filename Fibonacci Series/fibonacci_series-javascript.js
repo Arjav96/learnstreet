@@ -9,6 +9,31 @@
 // I have posted a link for the same.
 //http://www.nayuki.io/page/fast-fibonacci-algorithms.
 
+/*//here is a code in python for fast doubling method.
+# Fast doubling Fibonacci algorithm
+
+# Returns F(n).
+def fibonacci(n):
+    if n < 0:
+        raise ValueError("Negative arguments not implemented")
+    return _fib(n)[0]
+
+
+# Returns the tuple (F(n), F(n+1)).
+def _fib(n):
+    if n == 0:
+        return (0, 1)
+    else:
+        a, b = _fib(n // 2)
+        c = a * (b * 2 - a)
+        d = a * a + b * b
+        if n % 2 == 0:
+            return (c, d)
+        else:
+            return (d, c + d)
+*/
+
+
 function fibRatio(n, thresh){
     var a=0, b =1;
     var ctr = 2;
