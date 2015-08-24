@@ -5,6 +5,10 @@
 //is almost equal to the golden ratio. The required
 //closeness to the golden ratio is 
 
+//We can probably use fast doubling method to calculate nth term of fibonacci series.
+// I have posted a link for the same.
+//http://www.nayuki.io/page/fast-fibonacci-algorithms.
+
 function fibRatio(n, thresh){
     var a=0, b =1;
     var ctr = 2;
@@ -19,7 +23,6 @@ function fibRatio(n, thresh){
         b = c + b;
         ratio = parseFloat(b)/parseFloat(a);
     }
-    
     return [ctr, ratio, a, b];
 }
 
